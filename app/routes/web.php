@@ -21,3 +21,5 @@ Route::get('/', function () {
 //     return 'hi';
 // });
 Route::get('/hi', [\App\Http\Controllers\NewController::class, 'index']);
+Route::get('products', [\App\Http\Controllers\ProductController::class, 'list']);
+Route::get('products{id}', [\App\Http\Controllers\ProductController::class, 'info']);
