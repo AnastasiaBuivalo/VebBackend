@@ -23,3 +23,8 @@ Route::get('/', function () {
 Route::get('/hi', [\App\Http\Controllers\NewController::class, 'index']);
 Route::get('products', [\App\Http\Controllers\ProductController::class, 'list']);
 Route::get('products{id}', [\App\Http\Controllers\ProductController::class, 'info']);
+Route::get('students{id}', [\App\Http\Controllers\StudentsController::class, 'info']);
+Route::get('users{id}', [\App\Http\Controllers\UsersController::class, 'info']);
+Route::get('lecturers{id}', [\App\Http\Controllers\LecturersController::class, 'info']);
+Route::get('all_course{id}', [\App\Http\Controllers\AllCourseController::class, 'info']);
+Route::get('all_course', [\App\Http\Controllers\AllCourseController::class, 'list']);
