@@ -6,6 +6,9 @@ import LogIn from "@/components/Forms/LogIn"
 import RegistrationForm from "@/components/Forms/RegistrationForm"
 import PageError from "@/components/PageError"
 import CoursePage from "@/components/CoursePage"
+import ProfilePage from '@/components/ProfilePage'
+import LogOut from "@/components/LogOut"
+import CreateCourse from "@/components/CreateCourse"
 
 const routes = [
   {
@@ -15,6 +18,7 @@ const routes = [
   },
   {
     path: "/all_course",
+    name: "catalog",
     component: CourseList
   },
   {
@@ -30,6 +34,22 @@ const routes = [
     path: "/registration",
     component: RegistrationForm
   },
+  {
+    path: "/profile",
+    name: "profile",
+    component: ProfilePage
+  },
+  {
+    path: '/logout',
+    name: 'logout',
+    component: LogOut
+},
+{
+  path: '/create_course',
+  name: 'createcourse',
+  component: CreateCourse
+},
+
   {
     path: "/page404",
     component: PageError

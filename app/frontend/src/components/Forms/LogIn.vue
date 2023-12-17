@@ -54,11 +54,12 @@ export default {
         
         axios.post('http://localhost/api/login', {email: this.login, password: this.password})
             .then((response) => {
+                console.log("вход")
                 localStorage.setItem('user', response.data.token)
                 this.$store.commit('setToken', response.data.token)
-                router.push({name: 'home'})
+                router.push({name: 'profile'})
             })
-            .catch((errors) => this.loginError = errors.response.data.message)
+            .catch((errors) => this.loginError =  errors.response.data.message)
       }
     }
   }

@@ -11,6 +11,7 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
-        "vuex": "^4.0.2"
+        "vuex": "^4.0.2",
+        "webpack": "^5.74.0"
     }
 }

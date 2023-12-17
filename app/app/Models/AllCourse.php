@@ -23,4 +23,8 @@ class AllCourse extends Model
             ->with('lecturers');
     }
 
+    public function gettitle(){
+        return 'title';
+    }
+
 }

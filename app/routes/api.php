@@ -40,3 +40,5 @@ Route::prefix('all_course')->group(function () {
 
 Route::post('login', [\App\Http\Controllers\UsersController::class, 'login']);
 Route::post('logout', [\App\Http\Controllers\UsersController::class, 'logout']);
+
+Route::post('create_course', [\App\Http\Controllers\AllCourseController::class, 'create_course']);

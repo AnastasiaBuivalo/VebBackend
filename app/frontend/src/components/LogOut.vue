@@ -1,8 +1,8 @@
 <script>
-import router from "@/router";
+import router from "../router/router";
 
 export default {
-    name: "LogoutView",
+    name: "LogOut",
     created() {
         localStorage.removeItem('user')
         this.$store.commit('setToken', null)

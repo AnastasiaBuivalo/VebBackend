@@ -4,7 +4,12 @@
     name: 'MyHeader',
     components: {
     
-    }
+    },
+    computed: {
+      isAuth() {
+          return this.$store.getters.isAuth
+      }
+  }
     }
 </script>
 
@@ -23,7 +28,8 @@
               </div>
               <input class="search-input">
               <a href="./page404">О нас</a>
-              <a href="./login">Профиль</a>
+              <a v-if="!isAuth" href="./login">Войти</a>
+              <a v-else href="./profile">Профиль</a>
           </nav>
       </header>
 </template>

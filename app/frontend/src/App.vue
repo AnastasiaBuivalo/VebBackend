@@ -27,6 +27,7 @@ export default {
 <style>
 .app header{
     width: 100%;
+    
 }
 .app .header nav{
     display: flex;
@@ -79,6 +80,9 @@ export default {
 }
 .app {
     background-color:#12847A; 
+    /* display: flex;
+    flex-direction:column;
+    justify-content: space-between; */
 }
 
 .main{
