@@ -1,3 +1,5 @@
+## Войти в папку проекта app
+cd app
 ## Устанавливает все зависимости проекта.
 composer install 
 
@@ -25,6 +27,8 @@ docker-compose stop
 
 ### Запустить клиент
 cd frontend
+
+
 npm run serve
 
 
