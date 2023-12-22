@@ -30,3 +30,6 @@ cd frontend
 
 
 npm run serve
+
+###Войти в adminer
+http://localhost/adminer-4.8.0.php
