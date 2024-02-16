@@ -1,3 +1,7 @@
+## Проект «Веб-приложение: платформа для онлайн курсов» по предмету Web-программирование
+### frontend: HTML, CSS, JS+Vue, 
+### backend: PHP, Laravel, MySQL, Postman, Docker.
+
  ## Войти в папку проекта app
 cd app
 ## Устанавливает все зависимости проекта.
@@ -31,5 +35,5 @@ cd frontend
 
 npm run serve
 
-###Войти в adminer
+### Войти в adminer
 http://localhost/adminer-4.8.0.php
